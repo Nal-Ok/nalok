@@ -20,7 +20,14 @@ export default [
     "comma-dangle": ["error", "always-muliline"],
     "react/jsx-users-react": "off",
     "react/prop-types": "off",
-  }
+    "react/jsx-key" : "error",
+    "@typescript-eslint/explicit-function-return-type" : "warn",
+    "@typescript-eslint/no-explicit-any" : "warn",
+    "prettier/prettier" : 'off'
+  },
+  extends: [
+    "plugin:prettier/recommended"
+  ]
   },
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
